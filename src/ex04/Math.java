@@ -14,8 +14,6 @@ public class Math {
 		return sum;
 	}
 	
-	
-	
 	public static double circleArea(int r) {
 		double area = PI*r*r;
 		return area;
