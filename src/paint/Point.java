@@ -31,20 +31,24 @@ public class Point {
 	}
 	
 	
-	public void showInfo() {
+	public void show() {
 		System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다.");
 	}
 	
-	
-
-	public void showInfo(Boolean falg) {
-		if(falg == true) {
-			System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다.");
+	public void show(boolean visible) {
+		if(visible == true) {
+			show();
 		}else {
 			System.out.println("점[x=" + x + ", y=" + y + "]을 지웠습니다.");
 		}
-		
 	}
+	
+	/*
+	public void disappear() {
+		System.out.println("점[x=" + x + ", y=" + y + "]을 지웠습니다.");
+	}
+	*/
+	
 	
 	
 	

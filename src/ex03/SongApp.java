@@ -12,5 +12,8 @@ public class SongApp {
 		song.setTrack(3);
 		
 		song.show();
+		
+		Song song2 = new Song("좋은날2", "아이유2", "", "", 0, 0);
+		song2.show();
 	}
 }
