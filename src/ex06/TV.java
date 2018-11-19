@@ -16,10 +16,16 @@ public class TV {
 	}
 	
 	public void channel(int channel) {
+		if(!power) {
+			return;
+		}
 		this.channel = channel;
 	}
 	
 	public void channel(boolean up) {
+		if(!power) {
+			return;
+		}		
 		if( up ) {
 			channel++;
 		} else {

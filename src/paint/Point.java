@@ -6,9 +6,11 @@ public class Point {
 	private int y;
 	
 	public Point() {
+		System.out.println("Point() called");
 	}
 
 	public Point(int x, int y) {
+		System.out.println("Point(int, int) called");
 		this.x = x;
 		this.y = y;
 	}
