@@ -4,28 +4,28 @@ public class PointApp {
 
 	public static void main(String[] args) {
 		Point p1 = new Point(2, 5);
-		drawPoint(p1);
+		draw(p1);
 		
 		Point p2 = new Point();
 		p2.setX(10);
 		p2.setY(23);
-		drawPoint(p2);
+		draw(p2);
 
 		
 		Point p3 = new ColorPoint(150, 200, "red");
 //		p3.setX(150);
 //		p3.setY(200);
 //		((ColorPoint)p3).setColor("red");
-		drawPoint(p3);
+		draw(p3);
 		
 		Shape s1 = new Rect(10, 20, 100, 200);
-		drawShape(s1);
+		draw(s1);
 		
 		Shape s2 = new Triangle();
-		drawShape(s2);
+		draw(s2);
 		
 		Shape s3 = new Circle();
-		drawShape(s3);
+		draw(s3);
 		
 		//Downcasting인 경우 명시적으로 캐스팅으로 해야 한다.
 		Circle c = (Circle)s3;
@@ -37,14 +37,17 @@ public class PointApp {
 		Shape s4 = c;
 		s4.setFillColor("red");
 	}
-	
-	private static void drawPoint(Point point) {
-		point.show();
-	}
 
-	private static void drawShape(Shape shape) {
-		shape.draw();
+	private static void draw(Drawable drawable) {
+		drawable.draw();
 	}
+	
+//	private static void drawPoint(Point point) {
+//		point.show();
+//	}
+//	private static void drawShape(Shape shape) {
+//		shape.draw();
+//	}
 	
 //	private static void drawRect(Rect rect) {
 //		rect.draw();
